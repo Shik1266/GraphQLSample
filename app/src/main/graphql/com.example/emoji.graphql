@@ -1,0 +1,10 @@
+mutation MutationTest ($subject:ID!,$content:ReactionContent!){
+    addReaction(input:{subjectId:$subject,content:$content}) {
+        reaction {
+            content
+        }
+        subject{
+            id
+        }
+    }
+}
